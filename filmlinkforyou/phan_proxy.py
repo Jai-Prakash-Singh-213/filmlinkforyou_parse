@@ -43,12 +43,12 @@ def main(link):
             driver.get(link)
 
             try:
-                driver.implicitly_wait(10)
+                driver.implicitly_wait(60)
             except:
                 pass
 
             try:
-                driver.set_page_load_timeout(10)
+                driver.set_page_load_timeout(120)
             except:
                 pass
 
